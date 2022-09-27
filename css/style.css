@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-BookItalic.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CircularStd";
+	src: url("../fonts/CircularStd-Black.woff2") format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+body{
+	font-family:"Lato", sans-serif;
+	}
+
+.page__container{
+	max-width: 810px;
+	margin: 10px auto;
+}
+
+h1 {
+font-size: 46px;
+font-weight: 900;
+line-height: 60px;
+margin-bottom: 40px;
+color: #1E212C;
+}
+
+.page__container p,li{
+	color:#424551;
+	margin-top: 24px;
+	line-height: 1.6;
+}
+.page__img img{
+	margin-bottom: 60px;
+	max-width: 100%;
+}
+.page__maintext {
+	color: #1E212C;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+.page__blockbold {
+	margin: 48px 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1E212C;
+	background: url("../img/braces.png") 0 0 /28px 20px no-repeat;
+	padding-left: 58px;
+}
+
+.page__text___list li {
+	padding-left: 25px;
+	background: url("../img/ok.jpg") 0 6px /16px 16px no-repeat;
+}
+
+.second__container {
+	font-family: "CircularStd", "Lato", serif ;
+	font-size: 10px;
+	border: 1px #77608d dotted;
+	max-width: 80%;
+	margin: 50px auto;
+}
+
+[class*="new__"]{
+	max-width: 45%;
+	display: inline-block;
+	margin: 10px;
+	}
+
+.new__first {
+	padding: 20px;
+	color: #fff;
+	font-style: italic;
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	border-radius: 20px;
+}
+.block{
+	min-height:80px ;
+	margin: 0 auto;
+	max-width: 10%;
+	min-width: 130px;
+}
+.block__button {
+	display: inline-block;
+	padding: 20px;
+	color:  rgba(148,187,233,1);
+	line-height: 1.5;
+	font-size: 15px;
+	text-decoration: underline;
+	background: rgba(148,187,233,1);
+	border-radius: 30px;
+	box-shadow: 0 5px 0 rgba(0, 0, 0, 0.575);
+	transition: all 0.3s ease 0s;
+}
+.block__button:hover {
+	color: #fff;
+	margin-top: 3px;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.575);
+	
+}
+
+.new__img{
+	border-top: 8px solid rgba(238,174,202,1);
+	border-right: 2px dotted rgba(238,174,202,1);
+	border-bottom: 3px double rgba(238,174,202,1);
+	border-left: 4px dashed rgba(238,174,202,1);
+	border-radius: 10px 20px 5px 40px;
+}
+
+
+.third__container {
+	font-family: "CircularStd", "Lato", serif ;
+	font-weight: 900;
+	text-align: justify;
+	text-shadow: 0 2px 2px  rgba(0, 0, 0, 0.2); 
+	font-size: 10px;
+	max-height: 100px;
+	overflow: auto;
+	color: #fff;
+	background-color:rgba(238,174,202,0.7) ;
+	max-width: 70%;
+	margin: 50px auto;
+	text-transform:uppercase;
+	text-indent: 50px;
+	letter-spacing: 1px;
+	word-spacing: 7px;
+	box-shadow: 0 5px 2px  rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+ul ul{
+	display: none;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+[class*="img__"]{
+		margin-top: 10px;
+	}
+.img__repeat {
+	max-width: 100%;
+	min-height: 100px;
+	background: url("../img/ok.jpg") 0 0 repeat;
+}
+.img__no-repeat {
+	max-width: 100%;
+	min-height: 100px;
+	background: lightblue url("../img/ok.jpg") 0 0/50px no-repeat;
+}
+.img__repeat-x {
+	max-width: 100%;
+	min-height: 100px;
+	background: lightblue url("../img/ok.jpg") 0 0/50px repeat-x;
+}
+
+.img__repeat-y {
+	max-width: 100%;
+	min-height: 100px;
+	background: lightblue url("../img/ok.jpg") 0 0 repeat-y;
+}
+
+.img__cover{
+	max-width: 100%;
+	min-height: 300px;
+	background: lightblue url("../img/desktop.jpg") 0 0 / cover no-repeat;
+}
+ 
+.img__images{
+	max-width: 100%;
+	min-height: 1000px;
+	background: url("../img/desktop.jpg") no-repeat 0 0 / 200px fixed, url("../img/desktop.jpg") no-repeat  center / 50% scroll, linear-gradient(55.95deg, rgba(243, 185, 183, 0.3) 0%, rgba(211, 165, 241, 0.3) 100%), url("../img/ok.jpg") no-repeat right top / 50px;
+}
+
+
+
